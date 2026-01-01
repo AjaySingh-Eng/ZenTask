@@ -1,20 +1,39 @@
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+# ZenTask | Productivity Redefined
 </div>
 
-# Run and deploy your AI Studio app
+ZenTask is a high-performance, professional task management suite designed to eliminate decision fatigue and cognitive overload. Built as a scalable REST-inspired application, it features secure authentication, Role-Based Access Control (RBAC), and the signature **Zen Flow™** adaptive engine.
 
-This contains everything you need to run your app locally.
+### 🌿 Signature Feature: Zen Flow™
+Traditional task managers cause anxiety with endless lists. **Zen Flow™** shifts the paradigm by presenting only one meaningful task at a time, dynamically selected based on your current state.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1N0A92e4AUNU8MOQHvye0fI_4t5zt5FFU
+- **Morning Check-in:** Aligns your workload with your current energy levels (Low, Medium, High).
+- **Time-Aware Logic:** Filters tasks based on your available window (15m, 30m, 1h).
+- **One-Task Focus:** An immersive UI removes distractions, showing only the task that matters right now.
+
+### 🚀 Core Features
+- **Identity Management:** Secure JWT-based session management with persistent authentication.
+- **RBAC Infrastructure:** Distinct modules for Administrators (Global Stats, User Directory) and Standard Users.
+- **Full CRUD Entity:** Comprehensive task lifecycle management with metadata for mental effort and time estimation.
+- **Adaptive UI:** Responsive glassmorphism design with seamless Dark/Light mode integration.
+
+### 📂 Architecture & Scalability
+- **Stateless Design:** Scalable JWT architecture ready for horizontal scaling behind NGINX.
+- **Caching Ready:** Designed for Redis integration to handle high-frequency resource retrieval.
+- **Resource Decoupling:** Modular service layer allowing for easy replacement of mock controllers with production backends.
+
+---
+
+View app: 
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. Set the `API_KEY` in [cp .env.example](.env.local) to your project API key
 3. Run the app:
    `npm run dev`
